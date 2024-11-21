@@ -1,0 +1,44 @@
+:root{
+    --mainEng-font:"Playfair Display";
+    --mainKor-font: 'Pretendard-R';
+    --mainNum-font:"EB Garamond";
+
+    
+    --mainColor100-color:#003058;
+    --mainColor200-color:#F0F9FF;
+
+    --subColor200-color:#BAE5FD;
+    --subColor300-color:#7ED0FB;
+    --subColor400-color:#0380C6;
+
+    --white:#fff;
+
+    font-family: var(--mainEng-font), var(--mainKor-font), var(--mainNum-font);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* 텍스트 렌더링 할때 안티엘리어싱 설정하는 데 사용  */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+
+    /* 텍스트 크기 조정할 때 허용 제한 */
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    color: var(--white);
+}
+
+#intro p{
+    color: var(--mainColor200-color);
+    font-family: var(--mainKor-font); 
+}
+
+#intro p em{
+    color: var(--white);
+}
+
+@media (max-width:800px) {
+    :root{font-size: 14px;}
+}

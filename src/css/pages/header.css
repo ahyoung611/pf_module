@@ -1,0 +1,31 @@
+#header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+#header .header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-weight: 600;
+}
+#header .header_inner .header_logo em {
+  padding-left: 10px;
+}
+#header .header_inner .header_nav {
+  width: 30%;
+}
+#header .header_inner .header_nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header_inner .header_nav ul li {
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+#header .header_inner .header_nav_mobile {
+  display: none;
+}
